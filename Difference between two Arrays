@@ -1,0 +1,22 @@
+function diffArray(arr1, arr2) {
+  var newArr = [];
+  var ar1r = [];
+  var ar2r = [];
+
+ var data = (arr2.length>arr1.length ? 1 :-1 );
+console.log(data);
+(data>0 ? ar2r= arr2:ar1r = arr2 );
+(data>0 ? ar1r= arr1:ar2r = arr1 );
+console.log('ar1r:'+ar1r);
+console.log('ar2r:'+ar2r);
+
+  // Same, same; but different.
+  
+  newArr =ar2r.filter(x => !ar1r.includes(x));
+  console.log('diff:'+newArr);
+  
+  
+  return diff;
+}
+
+diffArray([1, 2, 3, 5], [1, 2, 3, 4,7, 5]);
