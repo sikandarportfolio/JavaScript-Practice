@@ -1,0 +1,23 @@
+function whatIsInAName(collection,arg) {
+  // What's in a name?
+  var arr = [];
+  var src = Object.keys(arg);
+  console.log(collection.length+' keys :'+ src);
+
+
+return collection.filter((obj)=>{
+console.log(obj);
+for(var i = 0; i<src.length; i++)
+{
+if(!obj.hasOwnProperty(src[i]) || obj(src[i]) !==  arg.src[i] )
+{
+return false;
+}
+}
+
+return true;
+})
+}
+
+
+whatIsInAName([{ "apple": 1 }, { "apple": 1 }, { "apple": 1, "bat": 2 }], { "apple": 1 });
