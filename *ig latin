@@ -1,0 +1,28 @@
+function translatePigLatin(str) {
+  var hold = str.split('');
+   var aaaa =0;
+ var regex = /[aeiou]/gi;
+if (str[0] == regex )
+{
+  console.log(str[0]);
+return  aaaa= str.concat('way');
+}
+else
+{
+
+//   const ay = 'a';
+//   const ay2 = 'y';
+// var firstLet = hold.shift(0)
+// console.log(firstLet+'  '+hold);
+// var ans = hold.concat(firstLet);
+// ans.push(ay);
+// ans.push(ay2);
+//   console.log(ans);
+//   var aaaa = ans.join('');
+//   console.log(aaaa);
+//   return aaaa;
+}
+}
+
+var aa = translatePigLatin("california");
+console.log('the ans :'+ aa)
