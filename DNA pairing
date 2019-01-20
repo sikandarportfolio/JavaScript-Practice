@@ -1,0 +1,28 @@
+function pairElement(str) {
+  var str_ = str.split( '');
+  console.log(str_);
+var arrg = [];
+
+for(var i = 0; i < str.length; i++)
+{
+      switch(str[i]) {
+        case "A":
+        arrg.push(['A','T']);
+        break;
+        case "T":
+        arrg.push(['T','A']);
+        break;
+        case "C":
+        arrg.push(['C','G']);
+        break;
+        case "G":
+        arrg.push(['G','C']);
+        break;
+        default:
+          text = "I have never heard of that fruit...";
+      }
+}
+console.log('arrg:  '+arrg);
+return arrg;
+}
+pairElement("ATCGA");//A,T,T,A,C,G,G,C,A,T
