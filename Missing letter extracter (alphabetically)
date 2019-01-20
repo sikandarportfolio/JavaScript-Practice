@@ -1,0 +1,26 @@
+function fearNotLetter(str) {
+var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+var strin = str;
+var count = 0;
+
+var cutat = str[0];
+count +=alphabet.indexOf(cutat);
+console.log(alphabet.indexOf(cutat));
+var alphabet_ = alphabet.slice(alphabet.indexOf(cutat));
+console.log(alphabet_);
+
+for (var i =0; i< alphabet_.length; i++)
+{
+if(alphabet_[i] ===  strin[i]){
+  count++;
+  console.log(count);
+}
+else{break;}
+}
+
+console.log(alphabet[count]);
+
+  return alphabet[count];
+}
+
+fearNotLetter("stvwx");
