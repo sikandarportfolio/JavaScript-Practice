@@ -1,0 +1,25 @@
+function myReplace(str, before, after) {
+var after_ = '';
+
+if(before[0] === before[0].toUpperCase())
+{
+console.log('upper');
+after_= after.charAt(0).toUpperCase() + after.slice(1);
+console.log(after_);
+
+  
+}
+else {
+console.log('lower');
+after_= after.charAt(0).toLowerCase() + after.slice(1);
+console.log(after_);
+}
+
+
+var arr = str.split(' ');
+arr[arr.indexOf(before)]= after_;
+return arr.join(' ');
+
+}
+
+myReplace("A quick brown fox jumped over the lazy dog", "Jumped", "leaped");
