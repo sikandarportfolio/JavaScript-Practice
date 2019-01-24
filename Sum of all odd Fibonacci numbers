@@ -1,0 +1,29 @@
+function sumFibs(num) {
+var arr = [];
+arr.push(1);
+arr.push(1);
+var i =0;
+while( i !== num)  {
+i++;
+arr[i+1] = arr[i] + arr[i-1]
+if(arr[i+1]>num){
+    break;
+}
+}
+arr.pop();
+var oddFibs = [];
+oddFibs =arr.filter((x)=>{
+return (x%2 ==1)
+})
+var sum =0;
+oddFibs.forEach((elem)=>{
+sum +=elem;
+console.log(sum);
+})
+
+
+console.log(oddFibs);  
+  return sum;
+}
+
+sumFibs(10);
