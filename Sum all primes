@@ -1,3 +1,4 @@
+
 function isPrime(num)
 {if(num < 2) return 'toosmall';
 //That line is for checking if num is divisible by i or the current number we're checking. If it is divisible by any number less than the current number, we return false which means it is not a prime number. 
@@ -11,7 +12,7 @@ var count = 0;
 
 
 function sumPrimes(num) {
-for(var i = 2; i < num; i++){
+for(var i = 2; i <= num; i++){
     if(  isPrime(i)  ) {
 console.log(i);      
 count+=i;
@@ -22,5 +23,5 @@ return count;
 
 
 
-let a = sumPrimes(99);
+let a = sumPrimes(977);
 console.log('ans  :'+a);
