@@ -1,0 +1,37 @@
+function truthCheck(collection, pre) {
+  // Is everyone being true?
+  var result =[];
+  var trigger =0;
+    for (var i in collection){
+      result.push(collection[i][pre]);
+    } 
+    for (var j in collection){
+        if (result[j] == false){
+        return false;
+        }
+        else{
+        return true;
+        }
+    }
+//console.log(result); 
+//collection[i][pre]
+//console.log('res:---'+result);
+  
+}
+
+var ans = truthCheck([
+  {"user": "Tinky-Winky", 
+  "sex": "male", 
+  "age": 0}, 
+  {"user": "Dipsy", 
+  "sex": "male", 
+  "age": 1}, 
+  {"user": "Laa-Laa", 
+  "sex": "female", 
+  "age": 5}, 
+  {"user": "Po", 
+  "sex": "female", 
+  "age": 4}], 
+  "age");
+
+  console.log(ans);
